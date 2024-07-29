@@ -1,0 +1,39 @@
+/* src/components/ThankYou.css */
+.thank-you {
+  text-align: center;
+  padding: 50px;
+  background-color: #f5f5f5;
+  background-image: url("/public/img/background1.jpg"); /* Update this path to your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thank-you-box {
+  background: #1b3374;
+  padding: 50px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px; /* Adjust the width as needed */
+  max-width: 90%;
+}
+
+.check-icon {
+  width: 80px; /* Adjust the size as needed */
+  height: 80px; /* Adjust the size as needed */
+  margin-bottom: 20px;
+}
+
+.thank-you-box h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.thank-you-box p {
+  font-size: 1.2em;
+}

@@ -1,24 +1,74 @@
-import logo from './logo.svg';
-import './App.css';
+// // src/App.js
+// import React from "react";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Navigate,
+// } from "react-router-dom";
+// import LandingPage from "./components/LandingPage";
+// import ResumeUpload from "./components/ResumeUpload";
+// import FormPage from "./components/FormPage";
+// import ThankYou from "./components/ThankYou";
+// import AdminLogin from "./components/AdminLogin";
+// import AdminWorkflow from "./components/AdminWorkflow";
+// import ShortlistedCandidates from "./components/ShortlistedCandidates";
+// import PrivateRoute from "./components/PrivateRoute";
+
+// function App() {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<Navigate to="/user" />} />
+//         <Route path="/user" element={<LandingPage />} />
+//         <Route path="/user/resume-upload" element={<ResumeUpload />} />
+//         <Route path="/user/form" element={<FormPage />} />
+//         <Route path="/user/thank-you" element={<ThankYou />} />
+//         <Route path="/admin/login" element={<AdminLogin />} />
+//         <PrivateRoute path="/admin/workflow" element={<AdminWorkflow />} />
+//         <PrivateRoute
+//           path="/admin/shortlisted"
+//           element={<ShortlistedCandidates />}
+//         />
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+// export default App;
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import LandingPage from "./components/LandingPage";
+import ResumeUpload from "./components/ResumeUpload";
+import FormPage from "./components/FormPage";
+import ThankYou from "./components/ThankYou";
+import AdminLogin from "./components/AdminLogin";
+import AdminWorkflow from "./components/AdminWorkflow";
+import ShortlistedCandidates from "./components/ShortlistedCandidates";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/user" />} />
+        <Route path="/user" element={<LandingPage />} />
+        <Route path="/user/resume-upload" element={<ResumeUpload />} />
+        <Route path="/user/form" element={<FormPage />} />
+        <Route path="/user/thank-you" element={<ThankYou />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+
+        <Route path="/admin" element={<PrivateRoute />}>
+          <Route path="workflow" element={<AdminWorkflow />} />
+          <Route path="shortlisted" element={<ShortlistedCandidates />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 

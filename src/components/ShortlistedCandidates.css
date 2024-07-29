@@ -1,0 +1,120 @@
+/* src/components/ShortlistedCandidates.css */
+.shortlisted-candidates {
+  padding: 20px;
+}
+
+.shortlisted-candidates h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.shortlisted-candidates .chart-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.shortlisted-candidates .chart-container canvas {
+  max-width: 400px; /* Adjust this value as needed */
+  max-height: 400px; /* Adjust this value as needed */
+}
+
+.shortlisted-candidates table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.shortlisted-candidates th,
+.shortlisted-candidates td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.shortlisted-candidates th {
+  background-color: #f2f2f2;
+}
+
+.shortlisted-candidates a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.shortlisted-candidates a:hover {
+  text-decoration: underline;
+}
+
+.shortlisted-candidates button {
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.shortlisted-candidates button:hover {
+  background-color: #909395;
+}
+
+.shortlisted-candidates {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.show-info {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* src/components/ShortlistedCandidates.css */
+.table-controls {
+  margin-bottom: 20px;
+}
+
+.table-button {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.table-button:hover {
+  background-color: darkgrey;
+}
+
+.filter-box {
+  margin-left: 10px;
+}
+.filter-label {
+  margin-right: 10px; /* Adjust as needed */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.btn-logout {
+  float: right;
+}
+.last-row {
+  margin-top: 20px;
+}

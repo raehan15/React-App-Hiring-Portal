@@ -1,0 +1,156 @@
+.admin-workflow {
+  padding: 20px;
+}
+
+.admin-workflow h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.admin-workflow .chart-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.admin-workflow .chart-container canvas {
+  max-width: 400px; /* Adjust this value as needed */
+  max-height: 400px; /* Adjust this value as needed */
+}
+
+.admin-workflow table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-workflow th,
+.admin-workflow td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.admin-workflow th {
+  background-color: #f2f2f2;
+}
+
+.admin-workflow a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.admin-workflow a:hover {
+  text-decoration: underline;
+}
+
+.admin-workflow button {
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-workflow .link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.admin-workflow {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.show-info {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.table-controls {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.table-button {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.table-button:hover {
+  background-color: darkgrey;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn.grey-btn {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.search-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-btn {
+  background-color: grey;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.search-button:hover {
+  background-color: darkgrey;
+}
+
+.filter-box {
+  margin-left: 10px;
+}
+.filter-label {
+  margin-right: 10px; /* Adjust as needed */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.btn-logout {
+  float: right;
+}
+.last-row {
+  margin-top: 20px;
+}
